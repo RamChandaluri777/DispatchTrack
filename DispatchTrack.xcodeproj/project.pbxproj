@@ -13,6 +13,7 @@
 		4D0ACAE32B90E78F00F63765 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0ACAE22B90E78F00F63765 /* ContentView.swift */; };
 		4D0ACAE52B90E79000F63765 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D0ACAE42B90E79000F63765 /* Assets.xcassets */; };
 		4D0ACAE92B90E79000F63765 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D0ACAE82B90E79000F63765 /* Preview Assets.xcassets */; };
+		4D0ACAF12B90EAD100F63765 /* UserData.json in Resources */ = {isa = PBXBuildFile; fileRef = 4D0ACAF02B90EAD100F63765 /* UserData.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		4D0ACAE42B90E79000F63765 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4D0ACAE62B90E79000F63765 /* DispatchTrack.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DispatchTrack.entitlements; sourceTree = "<group>"; };
 		4D0ACAE82B90E79000F63765 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4D0ACAF02B90EAD100F63765 /* UserData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = UserData.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		4D0ACADA2B90E78F00F63765 /* DispatchTrack */ = {
 			isa = PBXGroup;
 			children = (
+				4D0ACAEF2B90E9EA00F63765 /* Resources */,
 				4D0ACADB2B90E78F00F63765 /* DispatchTrackApp.swift */,
 				4D0ACADD2B90E78F00F63765 /* Persistence.swift */,
 				4D0ACAE22B90E78F00F63765 /* ContentView.swift */,
@@ -73,6 +76,14 @@
 				4D0ACAE82B90E79000F63765 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4D0ACAEF2B90E9EA00F63765 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4D0ACAF02B90EAD100F63765 /* UserData.json */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -133,6 +144,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D0ACAF12B90EAD100F63765 /* UserData.json in Resources */,
 				4D0ACAE92B90E79000F63765 /* Preview Assets.xcassets in Resources */,
 				4D0ACAE52B90E79000F63765 /* Assets.xcassets in Resources */,
 			);
