@@ -9,6 +9,7 @@ import SwiftUI
 import CoreData
 
 struct ContentView: View {
+    @ObservedObject var orderData = ReadData()
     @Environment(\.managedObjectContext) private var viewContext
 
     @FetchRequest(
@@ -18,7 +19,7 @@ struct ContentView: View {
 
     var body: some View {
         NavigationView {
-            List {
+          /*  List {
                 ForEach(items) { item in
                     NavigationLink {
                         Text("Item at \(item.timestamp!, formatter: itemFormatter)")
@@ -40,7 +41,31 @@ struct ContentView: View {
                     }
                 }
             }
-            Text("Select an item")
+            Text("Select an item") */
+            
+            List {
+                ForEach(orderData.dispatches) { order in
+                    VStack(alignment: .leading) {
+                        Text("\(order.id)") // Note: Convert Int to String
+                            .font(.title)
+                            .fontWeight(.heavy)
+                            .foregroundColor(Color.gray)
+                            
+                        HStack{
+                            Text("\(order.estimatedAt)") // Note: Convert Date to String
+                                .font(.title3)
+                                .foregroundColor(Color.red)
+                                
+                            Spacer()
+                            Text("\(order.dispatchGuide.address.name)") // Note: Access address name property
+                                .font(.title3)
+                        }
+                    }
+
+                }
+            }
+           
+             
         }
     }
 

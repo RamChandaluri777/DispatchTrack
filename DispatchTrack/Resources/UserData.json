@@ -5,13 +5,13 @@
       "dispatch_sub_status_id":16009,
       "estimated_at":"2024-02-06T17:39:26.000+05:30",
       "slot":1,
-      " is_trunk":false,
+      "is_trunk":false,
       "is_pickup":false,
       "destination_id":null,
       "can_manage_dispatch":true,
       "dispatch_guide":{
          "code":"Orders-0142",
-         " mode":0,
+         "mode":0,
          "min_delivery_time":"2024-02-06T09:00:00.000+05:30",
          "max_delivery_time":"2024-02-06T19:00:00.000+05:30",
          "locked":false,
@@ -28,7 +28,7 @@
          "pickup_address":null,
          "contact":{
             "id":28706444,
-            "email":"so meemail@somecompany.com",
+            "email":"someemail@somecompany.com",
             "phone":"952179445",
             "identifier":"4-2",
             "name":"Customer42"
@@ -48,7 +48,7 @@
                "quantity":20,
                "unit_price":"0.0",
                "code":"Orderr42",
-               "quantity_re f":null,
+               "quantity_ref":null,
                "custom_fields":[
                   
                ]
@@ -60,13 +60,13 @@
       "id":88140664,
       "status_code":1,
       "dispatch_sub_status_id":16009,
-      "estimated_at":"2024-02-06T1 7:33:29.000+05:30",
+      "estimated_at":"2024-02-06T17:33:29.000+05:30",
       "slot":2,
       "is_trunk":false,
       "is_pickup":false,
       "destination_id":null,
       "can_manage_dispatch":true,
-      "dispatch_gui de":{
+      "dispatch_guide":{
          "code":"Orders-0143",
          "mode":0,
          "min_delivery_time":"2024-02-06T09:00:00.000+05:30",
@@ -85,7 +85,7 @@
          "pickup_address":null,
          "contact":{
             "id":28706445,
-            "email":"so meemail@somecompany.com",
+            "email":"someemail@somecompany.com",
             "phone":"952179445",
             "identifier":"4-3",
             "name":"Customer43"
@@ -105,7 +105,7 @@
                "quantity":100,
                "unit_price":"0.0",
                "code":"Orderr43",
-               "qua ntity_ref":null,
+               "quantity_ref":null,
                "custom_fields":[
                   
                ]
@@ -117,13 +117,13 @@
       "id":88140666,
       "status_code":1,
       "dispatch_sub_status_id":16009,
-      "estimated_at":"2024-0 2-06T17:43:29.000+05:30",
+      "estimated_at":"2024-02-06T17:43:29.000+05:30",
       "slot":3,
       "is_trunk":false,
       "is_pickup":false,
       "destination_id":null,
       "can_manage_dispatch":true,
-      "dispa tch_guide":{
+      "dispatch_guide":{
          "code":"Orders-0145",
          "mode":0,
          "min_delivery_time":"2024-02-06T09:00:00.000+05:30",
@@ -135,14 +135,14 @@
          ],
          "address":{
             "id":17182559,
-            "name":" MARTIN DE ZAMORA 3836, INT D. 41LAS CONDES , LASCONDES",
+            "name":"MARTIN DE ZAMORA 3836, INT D. 41LAS CONDES , LASCONDES",
             "latitude":"-33.4231305",
             "longitude":"-70.5877656"
          },
          "pickup_address":null,
          "contact":{
             "id":28691516,
-            "email":"so meemail@somecompany.com",
+            "email":"someemail@somecompany.com",
             "phone":"952179445",
             "identifier":"4-5",
             "name":"Customer45"
@@ -162,7 +162,7 @@
                "quantity":40,
                "unit_price":"0.0",
                "code":"Orderr45",
-               "quantity _ref":null,
+               "quantity_ref":null,
                "custom_fields":[
                   
                ]
@@ -180,11 +180,11 @@
       "is_pickup":false,
       "destination_id":null,
       "can_manage_dispatch":true,
-      "dispatch_ guide":{
+      "dispatch_guide":{
          "code":"Orders-0144",
          "mode":0,
          "min_delivery_time":"2024-02-06T09:00:00.000+05:30",
-         "max_delivery_time":"2024 -02-06T19:00:00.000+05:30",
+         "max_delivery_time":"2024-02-06T19:00:00.000+05:30",
          "locked":false,
          "pincode_enabled":false,
          "group_ids":[
@@ -199,7 +199,7 @@
          "pickup_address":null,
          "contact":{
             "id":28706446,
-            "email":"so meemail@somecompany.com",
+            "email":"someemail@somecompany.com",
             "phone":"952179445",
             "identifier":"4-4",
             "name":"Customer44"
@@ -219,7 +219,7 @@
                "quantity":10,
                "unit_price":"0.0",
                "code":"Orderr44",
-               "quantity_ref ":null,
+               "quantity_ref":null,
                "custom_fields":[
                   
                ]
@@ -231,7 +231,7 @@
       "id":88140658,
       "status_code":1,
       "dispatch_sub_status_id":16009,
-      "estimated_at":"2024-02-06T18 :03:29.000+05:30",
+      "estimated_at":"2024-02-06T18:03:29.000+05:30",
       "slot":5,
       "is_trunk":false,
       "is_pickup":false,
@@ -241,7 +241,7 @@
          "code":"Orders-0137",
          "mode":0,
          "min_delivery_time":"2024-02-06T09:00:00.000+05:30",
-         "max_delivery_time":"2024-02- 06T19:00:00.000+05:30",
+         "max_delivery_time":"2024-02-06T19:00:00.000+05:30",
          "locked":false,
          "pincode_enabled":false,
          "group_ids":[
@@ -249,14 +249,14 @@
          ],
          "address":{
             "id":17182589,
-            "name":"CESARCASCABEL 4385 141, LASCONDES",
+            "name":"CESARCASCABEL4385 141, LASCONDES",
             "latitude":"-33.422418",
             "longitude":"-70.5809905"
          },
          "pickup_address":null,
          "contact":{
             "id":28706439,
-            "email":"som eemail@somecompany.com",
+            "email":"someemail@somecompany.com",
             "phone":"952179445",
             "identifier":"3-7",
             "name":"Customer37"
@@ -276,7 +276,7 @@
                "quantity":40,
                "unit_price":"0.0",
                "code":"Orderr37",
-               "quantity _ref":null,
+               "quantity_ref":null,
                "custom_fields":[
                   
                ]
@@ -288,17 +288,17 @@
       "id":88140659,
       "status_code":2,
       "dispatch_sub_status_id":16011,
-      "estimated_at":"2024-02-06 T18:04:29.000+05:30",
+      "estimated_at":"2024-02-06T18:04:29.000+05:30",
       "slot":6,
       "is_trunk":false,
       "is_pickup":false,
       "destination_id":null,
       "can_manage_dispatch":true,
-      "dispatch_ guide":{
+      "dispatch_guide":{
          "code":"Orders-0138",
          "mode":0,
          "min_delivery_time":"2024-02-06T09:00:00.000+05:30",
-         "max_delivery_time":"2024 -02-06T19:00:00.000+05:30",
+         "max_delivery_time":"2024-02-06T19:00:00.000+05:30",
          "locked":false,
          "pincode_enabled":false,
          "group_ids":[
@@ -313,7 +313,7 @@
          "pickup_address":null,
          "contact":{
             "id":28706440,
-            "email":"som eemail@somecompany.com",
+            "email":"someemail@somecompany.com",
             "phone":"952179445",
             "identifier":"3-8",
             "name":"Customer38"
@@ -333,7 +333,7 @@
                "quantity":20,
                "unit_price":"0.0",
                "code":"Orderr38",
-               "quantity_re f":null,
+               "quantity_ref":null,
                "custom_fields":[
                   
                ]
@@ -345,17 +345,17 @@
       "id":88140660,
       "status_code":2,
       "dispatch_sub_status_id":16011,
-      "estimated_at":"2024-02-06T1 8:14:29.000+05:30",
+      "estimated_at":"2024-02-06T18:14:29.000+05:30",
       "slot":7,
       "is_trunk":false,
       "is_pickup":false,
       "destination_id":null,
       "can_manage_dispatch":true,
-      "dispatch_gui de":{
+      "dispatch_guide":{
          "code":"Orders-0139",
          "mode":0,
          "min_delivery_time":"2024-02-06T09:00:00.000+05:30",
-         "max_delivery_time":"2024-02 -06T19:00:00.000+05:30",
+         "max_delivery_time":"2024-02-06T19:00:00.000+05:30",
          "locked":false,
          "pincode_enabled":false,
          "group_ids":[
@@ -370,7 +370,7 @@
          "pickup_address":null,
          "contact":{
             "id":28706441,
-            "email":"somee mail@somecompany.com",
+            "email":"someemail@somecompany.com",
             "phone":"952179445",
             "identifier":"3-9",
             "name":"Customer39"
@@ -390,7 +390,7 @@
                "quantity":100,
                "unit_price":"0.0",
                "code":"Orderr39",
-               "qua ntity_ref":null,
+               "quantity_ref":null,
                "custom_fields":[
                   
                ]
@@ -402,17 +402,17 @@
       "id":88140661,
       "status_code":2,
       "dispatch_sub_status_id":16011,
-      "estimated_at":"2024-0 2-06T18:15:29.000+05:30",
+      "estimated_at":"2024-02-06T18:15:29.000+05:30",
       "slot":8,
       "is_trunk":false,
       "is_pickup":false,
       "destination_id":null,
       "can_manage_dispatch":true,
-      "dispa tch_guide":{
+      "dispatch_guide":{
          "code":"Orders-0140",
          "mode":0,
          "min_delivery_time":"2024-02-06T09:00:00.000+05:30",
-         "max_delivery_time":" 2024-02-06T19:00:00.000+05:30",
+         "max_delivery_time":"2024-02-06T19:00:00.000+05:30",
          "locked":false,
          "pincode_enabled":false,
          "group_ids":[
@@ -427,7 +427,7 @@
          "pickup_address":null,
          "contact":{
             "id":28706442,
-            "email":"somee mail@somecompany.com",
+            "email":"someemail@somecompany.com",
             "phone":"952179445",
             "identifier":"4-0",
             "name":"Customer40"
@@ -447,7 +447,7 @@
                "quantity":10,
                "unit_price":"0.0",
                "code":"Orderr40",
-               "quantity_ref ":null,
+               "quantity_ref":null,
                "custom_fields":[
                   
                ]
@@ -459,7 +459,7 @@
       "id":88140662,
       "status_code":2,
       "dispatch_sub_status_id":16011,
-      "estimated_at":"2024-02-06T18 :16:29.000+05:30",
+      "estimated_at":"2024-02-06T18:16:29.000+05:30",
       "slot":9,
       "is_trunk":false,
       "is_pickup":false,
@@ -469,7 +469,7 @@
          "code":"Orders-0141",
          "mode":0,
          "min_delivery_time":"2024-02-06T09:00:00.000+05:30",
-         "max_delivery_time":"2024-02- 06T19:00:00.000+05:30",
+         "max_delivery_time":"2024-02-06T19:00:00.000+05:30",
          "locked":false,
          "pincode_enabled":false,
          "group_ids":[
@@ -484,7 +484,7 @@
          "pickup_address":null,
          "contact":{
             "id":28706443,
-            "email":"somee mail@somecompany.com",
+            "email":"someemail@somecompany.com",
             "phone":"952179445",
             "identifier":"4-1",
             "name":"Customer41"
@@ -504,7 +504,7 @@
                "quantity":40,
                "unit_price":"0.0",
                "code":"Orderr41",
-               "quantity _ref":null,
+               "quantity_ref":null,
                "custom_fields":[
                   
                ]
@@ -516,17 +516,17 @@
       "id":88140667,
       "status_code":2,
       "dispatch_sub_status_id":16011,
-      "estimated_at":"2024-02-06 T18:26:29.000+05:30",
+      "estimated_at":"2024-02-06T18:26:29.000+05:30",
       "slot":10,
       "is_trunk":false,
       "is_pickup":false,
       "destination_id":null,
       "can_manage_dispatch":true,
-      "dispatch _guide":{
+      "dispatch_guide":{
          "code":"Orders-0146",
          "mode":0,
          "min_delivery_time":"2024-02-06T09:00:00.000+05:30",
-         "max_delivery_time":"202 4-02-06T19:00:00.000+05:30",
+         "max_delivery_time":"2024-02-06T19:00:00.000+05:30",
          "locked":false,
          "pincode_enabled":false,
          "group_ids":[
@@ -561,7 +561,7 @@
                "quantity":20,
                "unit_price":"0.0",
                "code":"Orderr46",
-               "quantity_re f":null,
+               "quantity_ref":null,
                "custom_fields":[
                   
                ]
@@ -579,11 +579,11 @@
       "is_pickup":false,
       "destination_id":null,
       "can_manage_dispatch":true,
-      "dispatch_g uide":{
+      "dispatch_guide":{
          "code":"Orders-0147",
          "mode":0,
          "min_delivery_time":"2024-02-06T09:00:00.000+05:30",
-         "max_delivery_time":"2024- 02-06T19:00:00.000+05:30",
+         "max_delivery_time":"2024-02-06T19:00:00.000+05:30",
          "locked":false,
          "pincode_enabled":false,
          "group_ids":[
@@ -598,7 +598,7 @@
          "pickup_address":null,
          "contact":{
             "id":28706448,
-            "email":"so meemail@somecompany.com",
+            "email":"someemail@somecompany.com",
             "phone":"952179445",
             "identifier":"4-7",
             "name":"Customer47"
@@ -618,7 +618,7 @@
                "quantity":100,
                "unit_price":"0.0",
                "code":"Orderr47",
-               "qua ntity_ref":null,
+               "quantity_ref":null,
                "custom_fields":[
                   
                ]
@@ -630,13 +630,13 @@
       "id":88140669,
       "status_code":3,
       "dispatch_sub_status_id":16012,
-      "estimated_at":"2024-0 2-06T17:44:47.000+05:30",
+      "estimated_at":"2024-02-06T17:44:47.000+05:30",
       "slot":12,
       "is_trunk":false,
       "is_pickup":false,
       "destination_id":null,
       "can_manage_dispatch":true,
-      "disp atch_guide":{
+      "dispatch_guide":{
          "code":"Orders-0148",
          "mode":0,
          "min_delivery_time":"2024-02-06T09:00:00.000+05:30",
@@ -648,14 +648,14 @@
          ],
          "address":{
             "id":17182571,
-            "name":" LAS TORCAZAS 199 162, LASCONDES",
+            "name":"LASTORCAZAS 199162, LASCONDES",
             "latitude":"-33.413301",
             "longitude":"-70.5886838"
          },
          "pickup_address":null,
          "contact":{
             "id":28706449,
-            "email":"som eemail@somecompany.com",
+            "email":"someemail@somecompany.com",
             "phone":"952179445",
             "identifier":"4-8",
             "name":"Customer48"
@@ -675,7 +675,7 @@
                "quantity":10,
                "unit_price":"0.0",
                "code":"Orderr48",
-               "quantity_ref ":null,
+               "quantity_ref":null,
                "custom_fields":[
                   
                ]
@@ -693,11 +693,11 @@
       "is_pickup":false,
       "destination_id":null,
       "can_manage_dispatch":true,
-      "dispatch_gui de":{
+      "dispatch_guide":{
          "code":"Orders-0149",
          "mode":0,
          "min_delivery_time":"2024-02-06T09:00:00.000+05:30",
-         "max_delivery_time":"2024-02 -06T19:00:00.000+05:30",
+         "max_delivery_time":"2024-02-06T19:00:00.000+05:30",
          "locked":false,
          "pincode_enabled":false,
          "group_ids":[
@@ -712,7 +712,7 @@
          "pickup_address":null,
          "contact":{
             "id":28706450,
-            "email":"so meemail@somecompany.com",
+            "email":"someemail@somecompany.com",
             "phone":"952179445",
             "identifier":"4-9",
             "name":"Customer49"
@@ -732,7 +732,7 @@
                "quantity":100,
                "unit_price":"0.0",
                "code":"Orderr49",
-               "qua ntity_ref":null,
+               "quantity_ref":null,
                "custom_fields":[
                   
                ]
@@ -744,13 +744,13 @@
       "id":88140657,
       "status_code":3,
       "dispatch_sub_status_id":16012,
-      "estimated_at":"2024-0 2-06T17:45:32.000+05:30",
+      "estimated_at":"2024-02-06T17:45:32.000+05:30",
       "slot":14,
       "is_trunk":false,
       "is_pickup":false,
       "destination_id":null,
       "can_manage_dispatch":true,
-      "disp atch_guide":{
+      "dispatch_guide":{
          "code":"Orders-0136",
          "mode":0,
          "min_delivery_time":"2024-02-06T09:00:00.000+05:30",
@@ -762,14 +762,14 @@
          ],
          "address":{
             "id":17182610,
-            "name":" AVENIDA PRESIDENTE ERRAZURIZ 4383 801, LASCONDES",
+            "name":"AVENIDA PRESIDENTE ERRAZURIZ 4383801, LASCONDES",
             "latitude":"-33.4192022",
             "longitude":"-70.5828879"
          },
          "pickup_address":null,
          "contact":{
             "id":28706438,
-            "email":"so meemail@somecompany.com",
+            "email":"someemail@somecompany.com",
             "phone":"952179445",
             "identifier":"3-6",
             "name":"Customer36"
@@ -789,7 +789,7 @@
                "quantity":10,
                "unit_price":"0.0",
                "code":"Orderr36",
-               "quantity_ref ":null,
+               "quantity_ref":null,
                "custom_fields":[
                   
                ]
@@ -826,7 +826,7 @@
          "pickup_address":null,
          "contact":{
             "id":28706451,
-            "email":"som eemail@somecompany.com",
+            "email":"someemail@somecompany.com",
             "phone":"952179445",
             "identifier":"5-0",
             "name":"Customer50"
@@ -846,7 +846,7 @@
                "quantity":10,
                "unit_price":"0.0",
                "code":"Orderr50",
-               "quantity_ref ":null,
+               "quantity_ref":null,
                "custom_fields":[
                   
                ]
@@ -858,7 +858,7 @@
       "id":88140622,
       "status_code":0,
       "dispatch_sub_status_id":null,
-      "estimated_at":"2024-02-06T17:5 5:59.000+05:30",
+      "estimated_at":"2024-02-06T17:55:59.000+05:30",
       "slot":16,
       "is_trunk":false,
       "is_pickup":false,
@@ -868,7 +868,7 @@
          "code":"Orders-0101",
          "mode":0,
          "min_delivery_time":"2024-02-06T09:00:00.000+05:30",
-         "max_delivery_time":"2024-02- 06T19:00:00.000+05:30",
+         "max_delivery_time":"2024-02-06T19:00:00.000+05:30",
          "locked":false,
          "pincode_enabled":false,
          "group_ids":[
@@ -883,7 +883,7 @@
          "pickup_address":null,
          "contact":{
             "id":28687902,
-            "email":"so meemail@somecompany.com",
+            "email":"someemail@somecompany.com",
             "phone":"952179445",
             "identifier":"-1",
             "name":"Customer1"
@@ -905,7 +905,7 @@
          "items":[
             {
                "id":113798259,
-               "nam e":"Customer1",
+               "name":"Customer1",
                "quantity":3,
                "unit_price":"0.0",
                "code":"146002617742",
@@ -941,10 +941,10 @@
       "dispatch_guide":{
          "code":"Orders-0102",
          "mode":0,
-         "min_ delivery_time":"2024-02-06T09:00:00.000+05:30",
+         "min_delivery_time":"2024-02-06T09:00:00.000+05:30",
          "max_delivery_time":"2024-02-06T19:00:00.000+05:30",
          "locked":false,
-         "p incode_enabled":false,
+         "pincode_enabled":false,
          "group_ids":[
             
          ],
@@ -957,7 +957,7 @@
          "pickup_address":null,
          "contact":{
             "id":28689513,
-            "email":" someemail@somecompany.com",
+            "email":"someemail@somecompany.com",
             "phone":"952179445",
             "identifier":"-2",
             "name":"Customer2"
@@ -979,7 +979,7 @@
          "items":[
             {
                "id":113798260,
-               "nam e":"Customer2",
+               "name":"Customer2",
                "quantity":3,
                "unit_price":"0.0",
                "code":"999990454873716",
@@ -1008,14 +1008,14 @@
       "dispatch_sub_status_id":null,
       "estimated_at":"2024-02-06T18:15:59.000+05:30",
       "slot":18,
-      "is_trunk":"fal se",
+      "is_trunk":false,
       "is_pickup":false,
       "destination_id":null,
       "can_manage_dispatch":true,
       "dispatch_guide":{
          "code":"Orders-0103",
          "mode":0,
-         "mi n_delivery_time":"2024-02-06T09:00:00.000+05:30",
+         "min_delivery_time":"2024-02-06T09:00:00.000+05:30",
          "max_delivery_time":"2024-02-06T19:00:00.000+05:30",
          "locked":false,
          "pincode_enabled":false,
@@ -1031,7 +1031,7 @@
          "pickup_address":null,
          "contact":{
             "id":28691312,
-            "email":"so meemail@somecompany.com",
+            "email":"someemail@somecompany.com",
             "phone":"952179445",
             "identifier":"-3",
             "name":"Customer3"
@@ -1053,7 +1053,7 @@
          "items":[
             {
                "id":113798261,
-               "nam e":"Customer3",
+               "name":"Customer3",
                "quantity":3,
                "unit_price":"0.0",
                "code":"950000000001094963",
@@ -1082,16 +1082,16 @@
       "dispatch_sub_status_id":null,
       "estimated_at":"2024-02-06T18:25:59.000+05:30",
       "slot":19,
-      "is_t runk":false,
+      "is_trunk":false,
       "is_pickup":false,
       "destination_id":null,
       "can_manage_dispatch":true,
       "dispatch_guide":{
          "code":"Orders-0106",
-         "mod e":0,
+         "mode":0,
          "min_delivery_time":"2024-02-06T09:00:00.000+05:30",
          "max_delivery_time":"2024-02-06T19:00:00.000+05:30",
-         "locke d":false,
+         "locked":false,
          "pincode_enabled":false,
          "group_ids":[
             
@@ -1105,7 +1105,7 @@
          "pickup_address":null,
          "contact":{
             "id":28694000,
-            "email":"so meemail@somecompany.com",
+            "email":"someemail@somecompany.com",
             "phone":"952179445",
             "identifier":"-6",
             "name":"Customer6"
@@ -1127,7 +1127,7 @@
          "items":[
             {
                "id":113798264,
-               "nam e":"Customer6",
+               "name":"Customer6",
                "quantity":3,
                "unit_price":"0.0",
                "code":"999990454864745",
@@ -1156,14 +1156,14 @@
       "dispatch_sub_status_id":null,
       "estimated_at":"2024-02-06T18:26:59.000+05:30",
       "slot":20,
-      "is_trunk":"fal se",
+      "is_trunk":false,
       "is_pickup":false,
       "destination_id":null,
       "can_manage_dispatch":true,
       "dispatch_guide":{
          "code":"Orders-0107",
          "mode":0,
-         "mi n_delivery_time":"2024-02-06T09:00:00.000+05:30",
+         "min_delivery_time":"2024-02-06T09:00:00.000+05:30",
          "max_delivery_time":"2024-02-06T19:00:00.000+05:30",
          "locked":false,
          "pincode_enabled":false,
@@ -1179,7 +1179,7 @@
          "pickup_address":null,
          "contact":{
             "id":28689527,
-            "email":"so meemail@somecompany.com",
+            "email":"someemail@somecompany.com",
             "phone":"952179445",
             "identifier":"-7",
             "name":"Customer7"
@@ -1201,7 +1201,7 @@
          "items":[
             {
                "id":113798265,
-               "nam e":"Customer7",
+               "name":"Customer7",
                "quantity":3,
                "unit_price":"0.0",
                "code":"999990454864493",
@@ -1230,7 +1230,7 @@
       "dispatch_sub_status_id":null,
       "estimated_at":"2024-02-06T18:27:59.000+05:30",
       "slot":21,
-      "is_trun k":false,
+      "is_trunk":false,
       "is_pickup":false,
       "destination_id":null,
       "can_manage_dispatch":true,
@@ -1253,7 +1253,7 @@
          "pickup_address":null,
          "contact":{
             "id":28694001,
-            "email":"so meemail@somecompany.com",
+            "email":"someemail@somecompany.com",
             "phone":"952179445",
             "identifier":"-8",
             "name":"Customer8"
@@ -1275,7 +1275,7 @@
          "items":[
             {
                "id":113798266,
-               "nam e":"Customer8",
+               "name":"Customer8",
                "quantity":3,
                "unit_price":"0.0",
                "code":"999990454863915",
@@ -1311,10 +1311,10 @@
       "dispatch_guide":{
          "code":"Orders-0109",
          "mode":0,
-         "min_ delivery_time":"2024-02-06T09:00:00.000+05:30",
+         "min_delivery_time":"2024-02-06T09:00:00.000+05:30",
          "max_delivery_time":"2024-02-06T19:00:00.000+05:30",
          "locked":false,
-         "p incode_enabled":false,
+         "pincode_enabled":false,
          "group_ids":[
             
          ],
@@ -1327,7 +1327,7 @@
          "pickup_address":null,
          "contact":{
             "id":28706416,
-            "email":"someem ail@somecompany.com",
+            "email":"someemail@somecompany.com",
             "phone":"952179445",
             "identifier":"-9",
             "name":"Customer9"
@@ -1335,7 +1335,7 @@
          "custom_fields":[
             {
                "id":-1728782440,
-               "v alue":"Kiran",
+               "value":"Kiran",
                "name":"Drivername",
                "color":"#ef8d1f"
             },
@@ -1349,7 +1349,7 @@
          "items":[
             {
                "id":113798267,
-               "nam e":"Customer9",
+               "name":"Customer9",
                "quantity":3,
                "unit_price":"0.0",
                "code":"950000000001093423",
@@ -1378,7 +1378,7 @@
       "dispatch_sub_status_id":null,
       "estimated_at":"2024-02-06T18:47:59.000+05:30",
       "slot":23,
-      "is_trunk ":false,
+      "is_trunk":false,
       "is_pickup":false,
       "destination_id":null,
       "can_manage_dispatch":true,
@@ -1387,7 +1387,7 @@
          "mode":0,
          "min_delivery_time":"2024-02-06T09:00:00.000+05:30",
          "max_delivery_time":"2024-02-06T19:00:00.000+05:30",
-         "locked":"fa lse",
+         "locked":false,
          "pincode_enabled":false,
          "group_ids":[
             
@@ -1401,7 +1401,7 @@
          "pickup_address":null,
          "contact":{
             "id":28706418,
-            "email":"so meemail@somecompany.com",
+            "email":"someemail@somecompany.com",
             "phone":"952179445",
             "identifier":"1-3",
             "name":"Customer13"
@@ -1423,7 +1423,7 @@
          "items":[
             {
                "id":113798271,
-               "nam e":"Customer13",
+               "name":"Customer13",
                "quantity":3,
                "unit_price":"0.0",
                "code":"999990454875611",
@@ -1461,7 +1461,7 @@
          "mode":0,
          "min_delivery_time":"2024-02-06T09:00:00.000+05:30",
          "max_delivery_time":"2024-02-06T19:00:00.000+05:30",
-         "locked":"fal se",
+         "locked":false,
          "pincode_enabled":false,
          "group_ids":[
             
@@ -1475,7 +1475,7 @@
          "pickup_address":null,
          "contact":{
             "id":28706419,
-            "email":"so meemail@somecompany.com",
+            "email":"someemail@somecompany.com",
             "phone":"952179445",
             "identifier":"1-4",
             "name":"Customer14"
@@ -1497,7 +1497,7 @@
          "items":[
             {
                "id":113798272,
-               "nam e":"Customer14",
+               "name":"Customer14",
                "quantity":3,
                "unit_price":"0.0",
                "code":"999990454875796",
@@ -1526,14 +1526,14 @@
       "dispatch_sub_status_id":null,
       "estimated_at":"2024-02-06T18:49:59.000+05:30",
       "slot":25,
-      "is_trunk":"f alse",
+      "is_trunk":false,
       "is_pickup":false,
       "destination_id":null,
       "can_manage_dispatch":true,
       "dispatch_guide":{
          "code":"Orders-0115",
          "mode":0,
-         "m in_delivery_time":"2024-02-06T09:00:00.000+05:30",
+         "min_delivery_time":"2024-02-06T09:00:00.000+05:30",
          "max_delivery_time":"2024-02-06T19:00:00.000+05:30",
          "locked":false,
          "pincode_enabled":false,
@@ -1549,7 +1549,7 @@
          "pickup_address":null,
          "contact":{
             "id":28706420,
-            "email":"so meemail@somecompany.com",
+            "email":"someemail@somecompany.com",
             "phone":"952179445",
             "identifier":"1-5",
             "name":"Customer15"
@@ -1571,7 +1571,7 @@
          "items":[
             {
                "id":113798273,
-               "nam e":"Customer15",
+               "name":"Customer15",
                "quantity":3,
                "unit_price":"0.0",
                "code":"999990454875307",
@@ -1595,21 +1595,21 @@
       }
    },
    {
-      " id":88140637,
+      "id":88140637,
       "status_code":0,
       "dispatch_sub_status_id":null,
       "estimated_at":"2024-02-06T18:50:59.000+05:30",
       "slot":26,
-      "is_tr unk":false,
+      "is_trunk":false,
       "is_pickup":false,
       "destination_id":null,
       "can_manage_dispatch":true,
       "dispatch_guide":{
          "code":"Orders-0116",
-         "mode ":0,
+         "mode":0,
          "min_delivery_time":"2024-02-06T09:00:00.000+05:30",
          "max_delivery_time":"2024-02-06T19:00:00.000+05:30",
-         "locked ":false,
+         "locked":false,
          "pincode_enabled":false,
          "group_ids":[
             
@@ -1623,7 +1623,7 @@
          "pickup_address":null,
          "contact":{
             "id":28706421,
-            "email":"so meemail@somecompany.com",
+            "email":"someemail@somecompany.com",
             "phone":"952179445",
             "identifier":"1-6",
             "name":"Customer16"
@@ -1645,7 +1645,7 @@
          "items":[
             {
                "id":113798274,
-               "nam e":"Customer16",
+               "name":"Customer16",
                "quantity":3,
                "unit_price":"0.0",
                "code":"999990454875437",
@@ -1674,14 +1674,14 @@
       "dispatch_sub_status_id":null,
       "estimated_at":"2024-02-06T18:51:59.000+05:30",
       "slot":27,
-      "is_trunk":"fa lse",
+      "is_trunk":false,
       "is_pickup":false,
       "destination_id":null,
       "can_manage_dispatch":true,
       "dispatch_guide":{
          "code":"Orders-0117",
          "mode":0,
-         "mi n_delivery_time":"2024-02-06T09:00:00.000+05:30",
+         "min_delivery_time":"2024-02-06T09:00:00.000+05:30",
          "max_delivery_time":"2024-02-06T19:00:00.000+05:30",
          "locked":false,
          "pincode_enabled":false,
@@ -1697,7 +1697,7 @@
          "pickup_address":null,
          "contact":{
             "id":28706422,
-            "email":"so meemail@somecompany.com",
+            "email":"someemail@somecompany.com",
             "phone":"952179445",
             "identifier":"1-7",
             "name":"Customer17"
@@ -1719,7 +1719,7 @@
          "items":[
             {
                "id":113798275,
-               "nam e":"Customer17",
+               "name":"Customer17",
                "quantity":3,
                "unit_price":"0.0",
                "code":"999990454875413",
@@ -1755,9 +1755,9 @@
       "dispatch_guide":{
          "code":"Orders-0118",
          "mode":0,
-         " min_delivery_time":"2024-02-06T09:00:00.000+05:30",
+         "min_delivery_time":"2024-02-06T09:00:00.000+05:30",
          "max_delivery_time":"2024-02-06T19:00:00.000+05:30",
-         "locked":"fal se",
+         "locked":false,
          "pincode_enabled":false,
          "group_ids":[
             
@@ -1771,7 +1771,7 @@
          "pickup_address":null,
          "contact":{
             "id":28706423,
-            "email":"so meemail@somecompany.com",
+            "email":"someemail@somecompany.com",
             "phone":"952179445",
             "identifier":"1-8",
             "name":"Customer18"
@@ -1793,7 +1793,7 @@
          "items":[
             {
                "id":113798276,
-               "nam e":"Customer18",
+               "name":"Customer18",
                "quantity":3,
                "unit_price":"0.0",
                "code":"999990454875116",
@@ -1822,14 +1822,14 @@
       "dispatch_sub_status_id":null,
       "estimated_at":"2024-02-06T18:53:59.000+05:30",
       "slot":29,
-      "is_trunk":"f alse",
+      "is_trunk":false,
       "is_pickup":false,
       "destination_id":null,
       "can_manage_dispatch":true,
       "dispatch_guide":{
          "code":"Orders-0119",
          "mode":0,
-         "m in_delivery_time":"2024-02-06T09:00:00.000+05:30",
+         "min_delivery_time":"2024-02-06T09:00:00.000+05:30",
          "max_delivery_time":"2024-02-06T19:00:00.000+05:30",
          "locked":false,
          "pincode_enabled":false,
@@ -1845,7 +1845,7 @@
          "pickup_address":null,
          "contact":{
             "id":28706424,
-            "email":"so meemail@somecompany.com",
+            "email":"someemail@somecompany.com",
             "phone":"952179445",
             "identifier":"1-9",
             "name":"Customer19"
@@ -1867,7 +1867,7 @@
          "items":[
             {
                "id":113798277,
-               "nam e":"Customer19",
+               "name":"Customer19",
                "quantity":3,
                "unit_price":"0.0",
                "code":"999990454875659",
@@ -1891,21 +1891,21 @@
       }
    },
    {
-      " id":88140631,
+      "id":88140631,
       "status_code":0,
       "dispatch_sub_status_id":null,
       "estimated_at":"2024-02-06T19:03:59.000+05:30",
       "slot":30,
-      "is_tr unk":false,
+      "is_trunk":false,
       "is_pickup":false,
       "destination_id":null,
       "can_manage_dispatch":true,
       "dispatch_guide":{
          "code":"Orders-0110",
-         "mode ":0,
+         "mode":0,
          "min_delivery_time":"2024-02-06T09:00:00.000+05:30",
          "max_delivery_time":"2024-02-06T19:00:00.000+05:30",
-         "locked ":false,
+         "locked":false,
          "pincode_enabled":false,
          "group_ids":[
             
@@ -1919,7 +1919,7 @@
          "pickup_address":null,
          "contact":{
             "id":28706417,
-            "email":"so meemail@somecompany.com",
+            "email":"someemail@somecompany.com",
             "phone":"952179445",
             "identifier":"1-0",
             "name":"Customer10"
@@ -1941,7 +1941,7 @@
          "items":[
             {
                "id":113798268,
-               "nam e":"Customer10",
+               "name":"Customer10",
                "quantity":3,
                "unit_price":"0.0",
                "code":"999990454828297",
