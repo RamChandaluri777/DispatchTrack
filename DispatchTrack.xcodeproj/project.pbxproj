@@ -17,6 +17,7 @@
 		4D0ACAF42B90F42800F63765 /* OrdersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0ACAF32B90F42800F63765 /* OrdersModel.swift */; };
 		4D0ACAF72B90F68600F63765 /* JSONManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0ACAF62B90F68600F63765 /* JSONManager.swift */; };
 		4D0ACAFA2B92DEE600F63765 /* ListViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0ACAF92B92DEE600F63765 /* ListViewCell.swift */; };
+		4D0ACAFD2B93217400F63765 /* LocationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0ACAFC2B93217400F63765 /* LocationExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		4D0ACAF32B90F42800F63765 /* OrdersModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersModel.swift; sourceTree = "<group>"; };
 		4D0ACAF62B90F68600F63765 /* JSONManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONManager.swift; sourceTree = "<group>"; };
 		4D0ACAF92B92DEE600F63765 /* ListViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewCell.swift; sourceTree = "<group>"; };
+		4D0ACAFC2B93217400F63765 /* LocationExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +66,8 @@
 		4D0ACADA2B90E78F00F63765 /* DispatchTrack */ = {
 			isa = PBXGroup;
 			children = (
-				4D0ACAF82B92DEC600F63765 /* Task */,
+				4D0ACAFB2B93215200F63765 /* Extensions */,
+				4D0ACAF82B92DEC600F63765 /* Views */,
 				4D0ACAF52B90F66A00F63765 /* Manager */,
 				4D0ACAF22B90F40400F63765 /* Model */,
 				4D0ACAEF2B90E9EA00F63765 /* Resources */,
@@ -110,13 +113,21 @@
 			path = Manager;
 			sourceTree = "<group>";
 		};
-		4D0ACAF82B92DEC600F63765 /* Task */ = {
+		4D0ACAF82B92DEC600F63765 /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				4D0ACAE22B90E78F00F63765 /* ContentView.swift */,
 				4D0ACAF92B92DEE600F63765 /* ListViewCell.swift */,
 			);
-			path = Task;
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4D0ACAFB2B93215200F63765 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4D0ACAFC2B93217400F63765 /* LocationExtensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,6 +205,7 @@
 				4D0ACAF72B90F68600F63765 /* JSONManager.swift in Sources */,
 				4D0ACADC2B90E78F00F63765 /* DispatchTrackApp.swift in Sources */,
 				4D0ACADE2B90E78F00F63765 /* Persistence.swift in Sources */,
+				4D0ACAFD2B93217400F63765 /* LocationExtensions.swift in Sources */,
 				4D0ACAE32B90E78F00F63765 /* ContentView.swift in Sources */,
 				4D0ACAE12B90E78F00F63765 /* DispatchTrack.xcdatamodeld in Sources */,
 				4D0ACAFA2B92DEE600F63765 /* ListViewCell.swift in Sources */,

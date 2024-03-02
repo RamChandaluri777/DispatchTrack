@@ -9,19 +9,7 @@ import Foundation
 
 class ReadData: ObservableObject  {
     @Published var dispatches = [Dispatch]()
-    
-//    var selectedOrders: [Dispatch] {
-//        switch selectedOption {
-//        case .allOrders:
-//            return allOrders
-//        case .successful:
-//            return successfulOrders
-//        case .partial:
-//            return partialOrders
-//        case .failed:
-//            return failedOrders
-//        }
-//    }
+   
     
     var allOrders: [Dispatch] {
         return dispatches.filter { $0.statusCode == 0 }

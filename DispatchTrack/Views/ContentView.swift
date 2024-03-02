@@ -36,16 +36,20 @@ enum OrderStatus: Int, CaseIterable {
             return "Failed Orders"
         }
     }
-    
-   
-    
-    
+}
+
+struct Location: Identifiable {
+    let id :Int
+    var name: String
+    var coordinate: CLLocationCoordinate2D
 }
 
 struct ContentView: View {
     @ObservedObject var orderData = ReadData()
     @Environment(\.managedObjectContext) private var viewContext
-    
+    @State private var locations: [Location] = []
+    @State private var tappedCoordinate: CLLocationCoordinate2D?
+    @State private var tappedLocation: Dispatch?
     @FetchRequest(
         sortDescriptors: [NSSortDescriptor(keyPath: \Item.timestamp, ascending: true)],
         animation: .default)
@@ -54,7 +58,7 @@ struct ContentView: View {
     @State private var selectedFilterOption: String = "All Orders"
     @State private var selectedFilter: Int = 0
     @State private var selectedOption: Bool = false
-    
+    @State private var selection: Int?
     var orders: [Dispatch] {
         switch selectedFilter {
         case OrderStatus.successful.rawValue:
@@ -79,6 +83,10 @@ struct ContentView: View {
                     }
                     .pickerStyle(.segmented)
                 }).frame(width: 200)
+                    .onAppear(perform: {
+                        let addresses = orderData.dispatches.map { $0.dispatchGuide.address }
+                        self.locations = createLocations(from: addresses)
+                    })
                
                 
                 if selectedIndex == 0 {
@@ -103,7 +111,6 @@ struct ContentView: View {
                     .border(.gray, width: 1)
                     .padding()
                     
-                   
                     List {
                         ForEach(self.orders) { order in
                             ListViewCell(item: order)
@@ -115,16 +122,79 @@ struct ContentView: View {
                     .padding()
                     .listStyle(.plain)
                 } else if selectedIndex == 1 {
-                    // Show Apple Maps SwiftUI view
-                    // Replace Text("Apple Maps SwiftUI") with your Apple Maps SwiftUI view
-                    Text("Apple Maps SwiftUI")
-                        .padding()
+                    
+                    ZStack(alignment: .leading) {
+                        Map(selection: $selection) {
+                            ForEach(locations) { location in
+                                Marker(location.name, coordinate: location.coordinate)
+                                    .tint(.red)
+                            }
+                        }
+                        .onChange(of: selection) {
+                            guard let selection else { return }
+                            guard let item = locations.first(where: { $0.id == selection }) else { return }
+                            guard let dispatch = orderData.dispatches.first(where: { $0.dispatchGuide.address.id == selection  }) else { return }
+                            tappedLocation = dispatch
+                            
+                        }
+                    }
+                    if let tapped = self.tappedLocation {
+                        
+                        VStack {
+                            
+        
+                            HStack {
+                                VStack(alignment: .leading) {
+                                    Text(tapped.dispatchGuide.code)
+                                        .font(.body)
+                                        .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+                                        .frame(maxWidth: .infinity,alignment: .leading)
+                                    Text(tapped.dispatchGuide.address.name)
+                                        .foregroundStyle(.separator)
+                                        .lineLimit(nil)
+                                        .multilineTextAlignment(.leading)
+                                }.frame(maxWidth: .infinity)
+                            }
+                            .padding()
+                        }
+                    }
+//                    ZStack(alignment: .leading) {
+//                        MapReader { proxy in
+//                            Map(interactionModes: [.rotate, .zoom]){
+//                                ForEach(locations) { location in
+//                                        Marker(location.name, coordinate: location.coordinate)
+//                                    }
+//                            }.mapStyle(.hybrid(elevation: .realistic))
+//                                .onTapGesture { position in
+//                                   
+//                                    if let coordinate = proxy.convert(position, from: .local) {
+//                                        let roundedLatitude = String(format: "%.3f", coordinate.latitude)
+//                                        let roundedLongitude = String(format: "%.3f", coordinate.longitude)
+//                                        if let tappedLocation = locations.first(where: {
+//                                                            String(format: "%.3f", $0.coordinate.latitude) == roundedLatitude &&
+//                                                            String(format: "%.3f", $0.coordinate.longitude) == roundedLongitude
+//                                                        }) {
+//                                                            // Handle tapped Location object
+//                                                            print("Tapped location: \(tappedLocation.name)")
+//                                                        }
+//                                                }
+//                                }
+//                        }
+//                        
+//                        
+//                      
+//                    }
+                   
                 }
                 
             }.sheet(isPresented: $selectedOption) {
                 VStack(alignment: .leading) {
                     Text("All Orders").padding()
-                    
+                        .onTapGesture {
+                            selectedFilterOption = "All Orders"
+                            selectedFilter = 0
+                            selectedOption.toggle()
+                        }
                     List {
                         ForEach(OrderStatus.allCases, id: \.self) { status in
                             HStack(alignment: .center) {
@@ -147,6 +217,18 @@ struct ContentView: View {
             
         }
     }
+    
+    func createLocations(from addresses: [DispatchGuide.Address]) -> [Location] {
+            var locations: [Location] = []
+            for address in addresses {
+                let coordinate = CLLocationCoordinate2D(latitude: Double(address.latitude) ?? 0.0,
+                                                        longitude: Double(address.longitude) ?? 0.0)
+                let location = Location(id: address.id, name: address.name, coordinate: coordinate)
+                locations.append(location)
+            }
+            return locations
+        }
+    
     
     private func addItem() {
         withAnimation {

@@ -8,16 +8,255 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "617D3779-6012-4EAB-B304-251622857A2B"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "DispatchTrack/Manager/JSONManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "61"
-            endingLineNumber = "61"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
             landmarkName = "loadData()"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "617D3779-6012-4EAB-B304-251622857A2B - 6b0156464f9720eb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DispatchTrack.ReadData.loadData() -&gt; ()"
+                  moduleName = "DispatchTrack"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mohanchandaluri/Desktop/DispatchTrack/DispatchTrack/Manager/JSONManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "49"
+                  endingLineNumber = "49"
+                  offsetFromSymbolStart = "964">
+               </Location>
+               <Location
+                  uuid = "617D3779-6012-4EAB-B304-251622857A2B - 6b0156464f9720eb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DispatchTrack.ReadData.loadData() -&gt; ()"
+                  moduleName = "DispatchTrack"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mohanchandaluri/Desktop/DispatchTrack/DispatchTrack/Manager/JSONManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "49"
+                  endingLineNumber = "49"
+                  offsetFromSymbolStart = "1160">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BFD3D14A-D8A8-4EB5-853C-37A8E05FDB21"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DispatchTrack/Views/ContentView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "173"
+            endingLineNumber = "173"
+            landmarkName = "body"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "47FE1F58-C4D3-4860-9E40-D71F4699DDDF"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DispatchTrack/Views/ContentView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "179"
+            endingLineNumber = "179"
+            landmarkName = "body"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A371DB45-5519-49BE-9650-C66B401C022D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DispatchTrack/Views/ContentView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "178"
+            endingLineNumber = "178"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "A371DB45-5519-49BE-9650-C66B401C022D - 8a16e9ca8aef5be3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.onAppear(perform: Swift.Optional&lt;() -&gt; ()&gt;) -&gt; some&gt;&gt;.0, Swift.Optional&lt;SwiftUI._ConditionalContent&lt;SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of SwiftUI.View.listStyle&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.ListStyle&gt;(&#x3c4;_1_0) -&gt; some&gt;&gt;.0)&gt;, &lt;&lt;opaque return type of SwiftUI.View.onChange&lt;&#x3c4;_0_0 where &#x3c4;_1_0: Swift.Equatable&gt;(of: &#x3c4;_1_0, initial: Swift.Bool, _: () -&gt; ()) -&gt; some&gt;&gt;.0&gt;&gt;)&gt; in closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.sheet&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.View&gt;(isPresented: SwiftUI.Binding&lt;Swift.Bool&gt;, onDismiss: Swift.Optional&lt;() -&gt; ()&gt;, content: () -&gt; &#x3c4;_1_0) -&gt; some&gt;&gt;.0 in DispatchTrack.ContentView.body.getter : some"
+                  moduleName = "DispatchTrack"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mohanchandaluri/Desktop/DispatchTrack/DispatchTrack/Views/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "196"
+                  endingLineNumber = "196"
+                  offsetFromSymbolStart = "5392">
+               </Location>
+               <Location
+                  uuid = "A371DB45-5519-49BE-9650-C66B401C022D - 8a16e9ca8aef5ba1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.onAppear(perform: Swift.Optional&lt;() -&gt; ()&gt;) -&gt; some&gt;&gt;.0, Swift.Optional&lt;SwiftUI._ConditionalContent&lt;SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of SwiftUI.View.listStyle&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.ListStyle&gt;(&#x3c4;_1_0) -&gt; some&gt;&gt;.0)&gt;, &lt;&lt;opaque return type of SwiftUI.View.onChange&lt;&#x3c4;_0_0 where &#x3c4;_1_0: Swift.Equatable&gt;(of: &#x3c4;_1_0, initial: Swift.Bool, _: () -&gt; ()) -&gt; some&gt;&gt;.0&gt;&gt;)&gt; in closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.sheet&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.View&gt;(isPresented: SwiftUI.Binding&lt;Swift.Bool&gt;, onDismiss: Swift.Optional&lt;() -&gt; ()&gt;, content: () -&gt; &#x3c4;_1_0) -&gt; some&gt;&gt;.0 in DispatchTrack.ContentView.body.getter : some"
+                  moduleName = "DispatchTrack"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mohanchandaluri/Desktop/DispatchTrack/DispatchTrack/Views/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "198"
+                  endingLineNumber = "198"
+                  offsetFromSymbolStart = "5392">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B2AFD7E9-254A-4BA4-B50F-CAAA388C553E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DispatchTrack/Views/ContentView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "137"
+            endingLineNumber = "137"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "B2AFD7E9-254A-4BA4-B50F-CAAA388C553E - 2583205395953a4f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #7 () -&gt; () in closure #1 () -&gt; SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.onAppear(perform: Swift.Optional&lt;() -&gt; ()&gt;) -&gt; some&gt;&gt;.0, Swift.Optional&lt;SwiftUI._ConditionalContent&lt;SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of SwiftUI.View.listStyle&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.ListStyle&gt;(&#x3c4;_1_0) -&gt; some&gt;&gt;.0)&gt;, &lt;&lt;opaque return type of SwiftUI.View.onChange&lt;&#x3c4;_0_0 where &#x3c4;_1_0: Swift.Equatable&gt;(of: &#x3c4;_1_0, initial: Swift.Bool, _: () -&gt; ()) -&gt; some&gt;&gt;.0&gt;&gt;)&gt; in closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.sheet&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.View&gt;(isPresented: SwiftUI.Binding&lt;Swift.Bool&gt;, onDismiss: Swift.Optional&lt;() -&gt; ()&gt;, content: () -&gt; &#x3c4;_1_0) -&gt; some&gt;&gt;.0 in DispatchTrack.ContentView.body.getter : some"
+                  moduleName = "DispatchTrack"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mohanchandaluri/Desktop/DispatchTrack/DispatchTrack/Views/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "152"
+                  endingLineNumber = "152"
+                  offsetFromSymbolStart = "1408">
+               </Location>
+               <Location
+                  uuid = "B2AFD7E9-254A-4BA4-B50F-CAAA388C553E - 2583205395953b8d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #7 () -&gt; () in closure #1 () -&gt; SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.onAppear(perform: Swift.Optional&lt;() -&gt; ()&gt;) -&gt; some&gt;&gt;.0, Swift.Optional&lt;SwiftUI._ConditionalContent&lt;SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of SwiftUI.View.listStyle&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.ListStyle&gt;(&#x3c4;_1_0) -&gt; some&gt;&gt;.0)&gt;, &lt;&lt;opaque return type of SwiftUI.View.onChange&lt;&#x3c4;_0_0 where &#x3c4;_1_0: Swift.Equatable&gt;(of: &#x3c4;_1_0, initial: Swift.Bool, _: () -&gt; ()) -&gt; some&gt;&gt;.0&gt;&gt;)&gt; in closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.sheet&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.View&gt;(isPresented: SwiftUI.Binding&lt;Swift.Bool&gt;, onDismiss: Swift.Optional&lt;() -&gt; ()&gt;, content: () -&gt; &#x3c4;_1_0) -&gt; some&gt;&gt;.0 in DispatchTrack.ContentView.body.getter : some"
+                  moduleName = "DispatchTrack"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mohanchandaluri/Desktop/DispatchTrack/DispatchTrack/Views/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "154"
+                  endingLineNumber = "154"
+                  offsetFromSymbolStart = "2272">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E9A8DEAD-6028-4E4C-8ECB-DE01E7F07715"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DispatchTrack/Views/ContentView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "177"
+            endingLineNumber = "177"
+            landmarkName = "body"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "800DDEC5-80C0-41F7-AE0D-5C475A5BFE98"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DispatchTrack/Views/ContentView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "136"
+            endingLineNumber = "136"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "800DDEC5-80C0-41F7-AE0D-5C475A5BFE98 - 2583205395953a6e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #7 () -&gt; () in closure #1 () -&gt; SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.onAppear(perform: Swift.Optional&lt;() -&gt; ()&gt;) -&gt; some&gt;&gt;.0, Swift.Optional&lt;SwiftUI._ConditionalContent&lt;SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of SwiftUI.View.listStyle&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.ListStyle&gt;(&#x3c4;_1_0) -&gt; some&gt;&gt;.0)&gt;, &lt;&lt;opaque return type of SwiftUI.View.onChange&lt;&#x3c4;_0_0 where &#x3c4;_1_0: Swift.Equatable&gt;(of: &#x3c4;_1_0, initial: Swift.Bool, _: () -&gt; ()) -&gt; some&gt;&gt;.0&gt;&gt;)&gt; in closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.sheet&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.View&gt;(isPresented: SwiftUI.Binding&lt;Swift.Bool&gt;, onDismiss: Swift.Optional&lt;() -&gt; ()&gt;, content: () -&gt; &#x3c4;_1_0) -&gt; some&gt;&gt;.0 in DispatchTrack.ContentView.body.getter : some"
+                  moduleName = "DispatchTrack"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mohanchandaluri/Desktop/DispatchTrack/DispatchTrack/Views/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "151"
+                  endingLineNumber = "151"
+                  offsetFromSymbolStart = "944">
+               </Location>
+               <Location
+                  uuid = "800DDEC5-80C0-41F7-AE0D-5C475A5BFE98 - 472a2ddc455c6301"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (DispatchTrack.Dispatch) -&gt; Swift.Bool in closure #7 () -&gt; () in closure #1 () -&gt; SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.onAppear(perform: Swift.Optional&lt;() -&gt; ()&gt;) -&gt; some&gt;&gt;.0, Swift.Optional&lt;SwiftUI._ConditionalContent&lt;SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of SwiftUI.View.listStyle&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.ListStyle&gt;(&#x3c4;_1_0) -&gt; some&gt;&gt;.0)&gt;, &lt;&lt;opaque return type of SwiftUI.View.onChange&lt;&#x3c4;_0_0 where &#x3c4;_1_0: Swift.Equatable&gt;(of: &#x3c4;_1_0, initial: Swift.Bool, _: () -&gt; ()) -&gt; some&gt;&gt;.0&gt;&gt;)&gt; in closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.sheet&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.View&gt;(isPresented: SwiftUI.Binding&lt;Swift.Bool&gt;, onDismiss: Swift.Optional&lt;() -&gt; ()&gt;, content: () -&gt; &#x3c4;_1_0) -&gt; some&gt;&gt;.0 in DispatchTrack.ContentView.body.getter : some"
+                  moduleName = "DispatchTrack"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mohanchandaluri/Desktop/DispatchTrack/DispatchTrack/Views/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "151"
+                  endingLineNumber = "151"
+                  offsetFromSymbolStart = "152">
+               </Location>
+               <Location
+                  uuid = "800DDEC5-80C0-41F7-AE0D-5C475A5BFE98 - c1094ab67d007d28"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (DispatchTrack.DispatchGuide.Item) -&gt; Swift.Bool in closure #2 (DispatchTrack.Dispatch) -&gt; Swift.Bool in closure #7 () -&gt; () in closure #1 () -&gt; SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.onAppear(perform: Swift.Optional&lt;() -&gt; ()&gt;) -&gt; some&gt;&gt;.0, Swift.Optional&lt;SwiftUI._ConditionalContent&lt;SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of SwiftUI.View.listStyle&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.ListStyle&gt;(&#x3c4;_1_0) -&gt; some&gt;&gt;.0)&gt;, &lt;&lt;opaque return type of SwiftUI.View.onChange&lt;&#x3c4;_0_0 where &#x3c4;_1_0: Swift.Equatable&gt;(of: &#x3c4;_1_0, initial: Swift.Bool, _: () -&gt; ()) -&gt; some&gt;&gt;.0&gt;&gt;)&gt; in closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.sheet&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.View&gt;(isPresented: SwiftUI.Binding&lt;Swift.Bool&gt;, onDismiss: Swift.Optional&lt;() -&gt; ()&gt;, content: () -&gt; &#x3c4;_1_0) -&gt; some&gt;&gt;.0 in DispatchTrack.ContentView.body.getter : some"
+                  moduleName = "DispatchTrack"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mohanchandaluri/Desktop/DispatchTrack/DispatchTrack/Views/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "151"
+                  endingLineNumber = "151"
+                  offsetFromSymbolStart = "24">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
