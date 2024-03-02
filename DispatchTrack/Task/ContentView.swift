@@ -7,11 +7,13 @@
 
 import SwiftUI
 import CoreData
+import MapKit
 
-enum OrderStatus: String, CaseIterable {
-    case successful = "Successful Orders"
-    case partial = "Partial Orders"
-    case failed = "Failed Orders"
+enum OrderStatus: Int, CaseIterable {
+    
+    case successful = 1
+    case partial = 2
+    case failed =  3
     
     var color: Color {
         switch self {
@@ -23,62 +25,101 @@ enum OrderStatus: String, CaseIterable {
             return .red
         }
     }
+    
+    var titles: String {
+        switch self {
+        case .successful:
+            return "Successful Orders"
+        case .partial:
+            return "Partial Orders"
+        case .failed:
+            return "Failed Orders"
+        }
+    }
+    
+   
+    
+    
 }
 
 struct ContentView: View {
     @ObservedObject var orderData = ReadData()
     @Environment(\.managedObjectContext) private var viewContext
-
+    
     @FetchRequest(
         sortDescriptors: [NSSortDescriptor(keyPath: \Item.timestamp, ascending: true)],
         animation: .default)
     private var items: FetchedResults<Item>
     @State private var selectedIndex = 0
     @State private var selectedFilterOption: String = "All Orders"
+    @State private var selectedFilter: Int = 0
     @State private var selectedOption: Bool = false
-
+    
+    var orders: [Dispatch] {
+        switch selectedFilter {
+        case OrderStatus.successful.rawValue:
+            return orderData.successfulOrders
+        case OrderStatus.partial.rawValue:
+            return orderData.partialOrders
+        case OrderStatus.failed.rawValue:
+            return orderData.failedOrders
+        default:
+            return orderData.allOrders
+        }
+    }
+    
     var body: some View {
         NavigationView {
             VStack(alignment: .center){
                 VStack (alignment: .center,content: {
                     Picker("", selection: $selectedIndex) {
-                                    Text("List").tag(0)
-                                    Text("Map").tag(1)
-                                    
-                                }
-                                .pickerStyle(.segmented)
-                }).frame(width: 200)
-                HStack {
-                    VStack(alignment: .leading,spacing: 10,content: {
-                        Text("Select Cretirea")
-                            .font(.caption2)
-                        Text(selectedFilterOption)
-                            .font(.caption)
-                            .padding(4)
-                    })
-                    Spacer()
-                    Image(systemName: "play.fill")
-                        .rotationEffect(.degrees(90))
-                        .padding(4).onTapGesture {
-                            selectedOption.toggle()
-                        }
-                }
-                .padding(8)
-                .shadow(radius: 5)
-                .cornerRadius(4.0)
-                .border(.gray, width: 1)
-                .padding()
-                    
-                
-                List {
-                    ForEach(orderData.dispatches) { order in
-                        ListViewCell(item: order)
-                            .listRowSeparator(.hidden, edges: /*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+                        Text("List").tag(0)
+                        Text("Map").tag(1)
                         
                     }
-                }.frame(maxWidth: .infinity)
+                    .pickerStyle(.segmented)
+                }).frame(width: 200)
+               
+                
+                if selectedIndex == 0 {
+                    HStack {
+                        VStack(alignment: .leading,spacing: 10,content: {
+                            Text("Select Cretirea")
+                                .font(.caption2)
+                            Text(selectedFilterOption)
+                                .font(.caption)
+                                .padding(4)
+                        })
+                        Spacer()
+                        Image(systemName: "play.fill")
+                            .rotationEffect(.degrees(90))
+                            .padding(4).onTapGesture {
+                                selectedOption.toggle()
+                            }
+                    }
+                    .padding(8)
+                    .shadow(radius: 5)
+                    .cornerRadius(4.0)
+                    .border(.gray, width: 1)
+                    .padding()
+                    
+                   
+                    List {
+                        ForEach(self.orders) { order in
+                            ListViewCell(item: order)
+                                .listRowSeparator(.hidden, edges: .all)
+                        }
+                    }
+                    
+                    .frame(maxWidth: .infinity)
                     .padding()
                     .listStyle(.plain)
+                } else if selectedIndex == 1 {
+                    // Show Apple Maps SwiftUI view
+                    // Replace Text("Apple Maps SwiftUI") with your Apple Maps SwiftUI view
+                    Text("Apple Maps SwiftUI")
+                        .padding()
+                }
                 
             }.sheet(isPresented: $selectedOption) {
                 VStack(alignment: .leading) {
@@ -86,30 +127,32 @@ struct ContentView: View {
                     
                     List {
                         ForEach(OrderStatus.allCases, id: \.self) { status in
-                            HStack(alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/, content: {
+                            HStack(alignment: .center) {
                                 Image(systemName: "circle.fill")
                                     .foregroundColor(status.color)
-                                Text(status.rawValue)
-                            }).listRowSeparator(.hidden, edges: /*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
-                                .onTapGesture {
-                                    selectedFilterOption = status.rawValue
-                                    selectedOption.toggle()
-                                }
-                                       }
-                       
-                    }.listStyle(.plain)
-                }.presentationDetents([.medium])
-                    
+                                Text(status.titles)
+                            }
+                            .listRowSeparator(.hidden, edges: .all)
+                            .onTapGesture {
+                                selectedFilterOption = status.titles
+                                selectedFilter = status.rawValue
+                                selectedOption.toggle()
+                            }
+                        }
+                    }
+                    .listStyle(.plain)
+                }
+                .presentationDetents([.height(200)])
             }
-             
+            
         }
     }
-
+    
     private func addItem() {
         withAnimation {
             let newItem = Item(context: viewContext)
             newItem.timestamp = Date()
-
+            
             do {
                 try viewContext.save()
             } catch {
@@ -120,11 +163,11 @@ struct ContentView: View {
             }
         }
     }
-
+    
     private func deleteItems(offsets: IndexSet) {
         withAnimation {
             offsets.map { items[$0] }.forEach(viewContext.delete)
-
+            
             do {
                 try viewContext.save()
             } catch {

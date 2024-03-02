@@ -10,6 +10,33 @@ import Foundation
 class ReadData: ObservableObject  {
     @Published var dispatches = [Dispatch]()
     
+//    var selectedOrders: [Dispatch] {
+//        switch selectedOption {
+//        case .allOrders:
+//            return allOrders
+//        case .successful:
+//            return successfulOrders
+//        case .partial:
+//            return partialOrders
+//        case .failed:
+//            return failedOrders
+//        }
+//    }
+    
+    var allOrders: [Dispatch] {
+        return dispatches.filter { $0.statusCode == 0 }
+    }
+    var successfulOrders: [Dispatch] {
+        return dispatches.filter { $0.statusCode == 1 }
+    }
+    
+    var partialOrders: [Dispatch] {
+        return dispatches.filter { $0.statusCode == 2 }
+    }
+    
+    var failedOrders: [Dispatch] {
+        return dispatches.filter { $0.statusCode == 3 }
+    }
         
     init(){
         loadData()
