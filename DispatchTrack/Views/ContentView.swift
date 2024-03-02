@@ -50,10 +50,8 @@ struct ContentView: View {
     @State private var locations: [Location] = []
     @State private var tappedCoordinate: CLLocationCoordinate2D?
     @State private var tappedLocation: Dispatch?
-    @FetchRequest(
-        sortDescriptors: [NSSortDescriptor(keyPath: \Item.timestamp, ascending: true)],
-        animation: .default)
-    private var items: FetchedResults<Item>
+    
+    var items: FetchedResults<Items>?
     @State private var selectedIndex = 0
     @State private var selectedFilterOption: String = "All Orders"
     @State private var selectedFilter: Int = 0
@@ -84,8 +82,8 @@ struct ContentView: View {
                     .pickerStyle(.segmented)
                 }).frame(width: 200)
                     .onAppear(perform: {
-                        let addresses = orderData.dispatches.map { $0.dispatchGuide.address }
-                        self.locations = createLocations(from: addresses)
+                        let addressList = orderData.dispatches.compactMap({$0.dispatchGuide?.address})
+                        self.locations = createLocations(from: addressList)
                     })
                
                 
@@ -133,7 +131,7 @@ struct ContentView: View {
                         .onChange(of: selection) {
                             guard let selection else { return }
                             guard let item = locations.first(where: { $0.id == selection }) else { return }
-                            guard let dispatch = orderData.dispatches.first(where: { $0.dispatchGuide.address.id == selection  }) else { return }
+                            guard let dispatch = orderData.dispatches.first(where: { $0.dispatchGuide?.address?.id == Int64(selection)  }) else { return }
                             tappedLocation = dispatch
                             
                         }
@@ -145,11 +143,11 @@ struct ContentView: View {
         
                             HStack {
                                 VStack(alignment: .leading) {
-                                    Text(tapped.dispatchGuide.code)
+                                    Text(tapped.dispatchGuide?.code ?? "0")
                                         .font(.body)
                                         .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
                                         .frame(maxWidth: .infinity,alignment: .leading)
-                                    Text(tapped.dispatchGuide.address.name)
+                                    Text(tapped.dispatchGuide?.address?.name ?? "address not found")
                                         .foregroundStyle(.separator)
                                         .lineLimit(nil)
                                         .multilineTextAlignment(.leading)
@@ -218,48 +216,19 @@ struct ContentView: View {
         }
     }
     
-    func createLocations(from addresses: [DispatchGuide.Address]) -> [Location] {
+    func createLocations(from addresses: [Address]) -> [Location] {
             var locations: [Location] = []
             for address in addresses {
-                let coordinate = CLLocationCoordinate2D(latitude: Double(address.latitude) ?? 0.0,
-                                                        longitude: Double(address.longitude) ?? 0.0)
-                let location = Location(id: address.id, name: address.name, coordinate: coordinate)
+                guard let latitude = address.latitude, let longitude = address.longitude else { continue }
+                let coordinate = CLLocationCoordinate2D(latitude: Double(latitude) ?? 0.0,
+                                                        longitude: Double(longitude) ?? 0.0)
+                let location = Location(id: Int(address.id), name: address.name ?? "", coordinate: coordinate)
                 locations.append(location)
             }
             return locations
         }
     
     
-    private func addItem() {
-        withAnimation {
-            let newItem = Item(context: viewContext)
-            newItem.timestamp = Date()
-            
-            do {
-                try viewContext.save()
-            } catch {
-                // Replace this implementation with code to handle the error appropriately.
-                // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
-                let nsError = error as NSError
-                fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
-            }
-        }
-    }
-    
-    private func deleteItems(offsets: IndexSet) {
-        withAnimation {
-            offsets.map { items[$0] }.forEach(viewContext.delete)
-            
-            do {
-                try viewContext.save()
-            } catch {
-                // Replace this implementation with code to handle the error appropriately.
-                // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
-                let nsError = error as NSError
-                fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
-            }
-        }
-    }
 }
 
 private let itemFormatter: DateFormatter = {

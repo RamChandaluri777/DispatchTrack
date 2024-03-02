@@ -12,7 +12,7 @@ struct ListViewCell: View {
     var listViewCell: some View {
         
             VStack(alignment: .leading) {
-                Text(item.dispatchGuide.code)
+                Text(item.dispatchGuide?.code ?? "0")
                     .font(.body)
                     .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
                     .frame(maxWidth: .infinity,alignment: .leading)
@@ -22,7 +22,7 @@ struct ListViewCell: View {
                         .font(.callout)
                     Divider().frame(height: 10)
                 }
-                Text(item.dispatchGuide.address.name)
+                Text(item.dispatchGuide?.address?.name ?? "location not found")
                     .foregroundStyle(.separator)
                     .lineLimit(nil)
                     .multilineTextAlignment(.leading)

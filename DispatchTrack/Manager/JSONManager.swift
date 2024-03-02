@@ -42,15 +42,24 @@ class ReadData: ObservableObject  {
             return
         }
         
-        do {
-            let decoder = JSONDecoder()
-            let dispatches = try decoder.decode([Dispatch].self, from: jsonData)
-            self.dispatches = dispatches
-            print(dispatches)
-        } catch {
-            print("Error decoding JSON: \(error)")
+        if let data = Dispatch.getDispatchData() , data.count > 0 {
+            self.dispatches = data
+        } else {
+            do {
+                let decoder = JSONDecoder()
+                if let context = CodingUserInfoKey.context {
+                    decoder.userInfo[context] = PersistenceController.shared.container.viewContext
+                    let dispatches = try decoder.decode([Dispatch].self, from: jsonData)
+                    Dispatch.insertDispatchData(dispatches)
+                    self.dispatches = Dispatch.getDispatchData() ?? []
+                    print(dispatches)
+                } else {
+                    fatalError("Failed to access context key")
+                }
+            } catch {
+                print("Error decoding JSON: \(error)")
+            }
         }
-       
         
     }
      

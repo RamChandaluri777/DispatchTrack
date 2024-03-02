@@ -1,9 +1,56 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="false" userDefinedModelVersionIdentifier="">
-    <entity name="Item" representedClassName="Item" syncable="YES" codeGenerationType="class">
-        <attribute name="timestamp" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="21513" systemVersion="21G1974" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Address" representedClassName=".Address" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="latitude" optional="YES" attributeType="String"/>
+        <attribute name="longitude" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
     </entity>
-    <elements>
-        <element name="Item" positionX="-63" positionY="-18" width="128" height="44"/>
-    </elements>
+    <entity name="Contact" representedClassName=".Contact" syncable="YES">
+        <attribute name="email" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="identifier" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="phone" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="CustomFields" representedClassName=".CustomFields" syncable="YES">
+        <attribute name="color" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="value" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="Dispatch" representedClassName=".Dispatch" syncable="YES">
+        <attribute name="canManageDispatch" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="destinationId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="dispatchSubStatusId" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="estimatedAt" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="isPickup" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="isTrunk" optional="YES" attributeType="Boolean" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="slot" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="statusCode" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="dispatchGuide" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="DispatchGuide"/>
+    </entity>
+    <entity name="DispatchGuide" representedClassName=".DispatchGuide" syncable="YES">
+        <attribute name="code" optional="YES" attributeType="String"/>
+        <attribute name="locked" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="maxDeliveryTime" optional="YES" attributeType="String"/>
+        <attribute name="minDeliveryTime" optional="YES" attributeType="String"/>
+        <attribute name="mode" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="pickupAddress" optional="YES" attributeType="String"/>
+        <attribute name="pincodeEnabled" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <relationship name="address" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Address"/>
+        <relationship name="contact" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Contact"/>
+        <relationship name="customFields" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="CustomFields"/>
+        <relationship name="items" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Items"/>
+    </entity>
+    <entity name="Items" representedClassName=".Items" syncable="YES">
+        <attribute name="code" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="quantity" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="quantityRef" optional="YES" attributeType="String"/>
+        <attribute name="unitPrice" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <relationship name="customFields" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="CustomFields"/>
+    </entity>
 </model>

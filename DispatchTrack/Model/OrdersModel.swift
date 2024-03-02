@@ -6,7 +6,7 @@
 //
 
 import Foundation
-
+/*
 struct Dispatch: Decodable, Identifiable {
     let id: Int
     let statusCode: Int
@@ -101,4 +101,4 @@ struct DispatchGuide: Decodable {
                     case customFields = "custom_fields"
                 }
     }
-}
+} */

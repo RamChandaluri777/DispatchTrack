@@ -18,6 +18,18 @@
 		4D0ACAF72B90F68600F63765 /* JSONManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0ACAF62B90F68600F63765 /* JSONManager.swift */; };
 		4D0ACAFA2B92DEE600F63765 /* ListViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0ACAF92B92DEE600F63765 /* ListViewCell.swift */; };
 		4D0ACAFD2B93217400F63765 /* LocationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0ACAFC2B93217400F63765 /* LocationExtensions.swift */; };
+		4D0ACB052B93350800F63765 /* DispatchGuide+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0ACAFE2B93350800F63765 /* DispatchGuide+CoreDataProperties.swift */; };
+		4D0ACB062B93350800F63765 /* Items+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0ACAFF2B93350800F63765 /* Items+CoreDataProperties.swift */; };
+		4D0ACB072B93350800F63765 /* Address+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0ACB002B93350800F63765 /* Address+CoreDataProperties.swift */; };
+		4D0ACB082B93350800F63765 /* Items+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0ACB012B93350800F63765 /* Items+CoreDataClass.swift */; };
+		4D0ACB092B93350800F63765 /* CustomFields+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0ACB022B93350800F63765 /* CustomFields+CoreDataProperties.swift */; };
+		4D0ACB0A2B93350800F63765 /* Contact+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0ACB032B93350800F63765 /* Contact+CoreDataProperties.swift */; };
+		4D0ACB0B2B93350800F63765 /* DispatchItem+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0ACB042B93350800F63765 /* DispatchItem+CoreDataProperties.swift */; };
+		4D0ACB112B93352400F63765 /* CustomFields+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0ACB0C2B93352400F63765 /* CustomFields+CoreDataClass.swift */; };
+		4D0ACB122B93352400F63765 /* DispatchGuide+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0ACB0D2B93352400F63765 /* DispatchGuide+CoreDataClass.swift */; };
+		4D0ACB132B93352400F63765 /* DispatchItem+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0ACB0E2B93352400F63765 /* DispatchItem+CoreDataClass.swift */; };
+		4D0ACB142B93352400F63765 /* Contact+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0ACB0F2B93352400F63765 /* Contact+CoreDataClass.swift */; };
+		4D0ACB152B93352400F63765 /* Address+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0ACB102B93352400F63765 /* Address+CoreDataClass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +46,18 @@
 		4D0ACAF62B90F68600F63765 /* JSONManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONManager.swift; sourceTree = "<group>"; };
 		4D0ACAF92B92DEE600F63765 /* ListViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewCell.swift; sourceTree = "<group>"; };
 		4D0ACAFC2B93217400F63765 /* LocationExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationExtensions.swift; sourceTree = "<group>"; };
+		4D0ACAFE2B93350800F63765 /* DispatchGuide+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DispatchGuide+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		4D0ACAFF2B93350800F63765 /* Items+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Items+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		4D0ACB002B93350800F63765 /* Address+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Address+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		4D0ACB012B93350800F63765 /* Items+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Items+CoreDataClass.swift"; sourceTree = "<group>"; };
+		4D0ACB022B93350800F63765 /* CustomFields+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CustomFields+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		4D0ACB032B93350800F63765 /* Contact+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Contact+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		4D0ACB042B93350800F63765 /* DispatchItem+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DispatchItem+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		4D0ACB0C2B93352400F63765 /* CustomFields+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CustomFields+CoreDataClass.swift"; sourceTree = "<group>"; };
+		4D0ACB0D2B93352400F63765 /* DispatchGuide+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DispatchGuide+CoreDataClass.swift"; sourceTree = "<group>"; };
+		4D0ACB0E2B93352400F63765 /* DispatchItem+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DispatchItem+CoreDataClass.swift"; sourceTree = "<group>"; };
+		4D0ACB0F2B93352400F63765 /* Contact+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Contact+CoreDataClass.swift"; sourceTree = "<group>"; };
+		4D0ACB102B93352400F63765 /* Address+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Address+CoreDataClass.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +124,18 @@
 		4D0ACAF22B90F40400F63765 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				4D0ACB102B93352400F63765 /* Address+CoreDataClass.swift */,
+				4D0ACB0F2B93352400F63765 /* Contact+CoreDataClass.swift */,
+				4D0ACB0C2B93352400F63765 /* CustomFields+CoreDataClass.swift */,
+				4D0ACB0D2B93352400F63765 /* DispatchGuide+CoreDataClass.swift */,
+				4D0ACB0E2B93352400F63765 /* DispatchItem+CoreDataClass.swift */,
+				4D0ACB002B93350800F63765 /* Address+CoreDataProperties.swift */,
+				4D0ACB032B93350800F63765 /* Contact+CoreDataProperties.swift */,
+				4D0ACB022B93350800F63765 /* CustomFields+CoreDataProperties.swift */,
+				4D0ACAFE2B93350800F63765 /* DispatchGuide+CoreDataProperties.swift */,
+				4D0ACB042B93350800F63765 /* DispatchItem+CoreDataProperties.swift */,
+				4D0ACB012B93350800F63765 /* Items+CoreDataClass.swift */,
+				4D0ACAFF2B93350800F63765 /* Items+CoreDataProperties.swift */,
 				4D0ACAF32B90F42800F63765 /* OrdersModel.swift */,
 			);
 			path = Model;
@@ -203,11 +239,23 @@
 			files = (
 				4D0ACAF42B90F42800F63765 /* OrdersModel.swift in Sources */,
 				4D0ACAF72B90F68600F63765 /* JSONManager.swift in Sources */,
+				4D0ACB112B93352400F63765 /* CustomFields+CoreDataClass.swift in Sources */,
+				4D0ACB0A2B93350800F63765 /* Contact+CoreDataProperties.swift in Sources */,
+				4D0ACB132B93352400F63765 /* DispatchItem+CoreDataClass.swift in Sources */,
+				4D0ACB082B93350800F63765 /* Items+CoreDataClass.swift in Sources */,
+				4D0ACB062B93350800F63765 /* Items+CoreDataProperties.swift in Sources */,
+				4D0ACB072B93350800F63765 /* Address+CoreDataProperties.swift in Sources */,
 				4D0ACADC2B90E78F00F63765 /* DispatchTrackApp.swift in Sources */,
+				4D0ACB092B93350800F63765 /* CustomFields+CoreDataProperties.swift in Sources */,
 				4D0ACADE2B90E78F00F63765 /* Persistence.swift in Sources */,
 				4D0ACAFD2B93217400F63765 /* LocationExtensions.swift in Sources */,
+				4D0ACB152B93352400F63765 /* Address+CoreDataClass.swift in Sources */,
+				4D0ACB052B93350800F63765 /* DispatchGuide+CoreDataProperties.swift in Sources */,
 				4D0ACAE32B90E78F00F63765 /* ContentView.swift in Sources */,
+				4D0ACB122B93352400F63765 /* DispatchGuide+CoreDataClass.swift in Sources */,
 				4D0ACAE12B90E78F00F63765 /* DispatchTrack.xcdatamodeld in Sources */,
+				4D0ACB142B93352400F63765 /* Contact+CoreDataClass.swift in Sources */,
+				4D0ACB0B2B93350800F63765 /* DispatchItem+CoreDataProperties.swift in Sources */,
 				4D0ACAFA2B92DEE600F63765 /* ListViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
