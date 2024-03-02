@@ -16,6 +16,7 @@
 		4D0ACAF12B90EAD100F63765 /* UserData.json in Resources */ = {isa = PBXBuildFile; fileRef = 4D0ACAF02B90EAD100F63765 /* UserData.json */; };
 		4D0ACAF42B90F42800F63765 /* OrdersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0ACAF32B90F42800F63765 /* OrdersModel.swift */; };
 		4D0ACAF72B90F68600F63765 /* JSONManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0ACAF62B90F68600F63765 /* JSONManager.swift */; };
+		4D0ACAFA2B92DEE600F63765 /* ListViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0ACAF92B92DEE600F63765 /* ListViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		4D0ACAF02B90EAD100F63765 /* UserData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = UserData.json; sourceTree = "<group>"; };
 		4D0ACAF32B90F42800F63765 /* OrdersModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersModel.swift; sourceTree = "<group>"; };
 		4D0ACAF62B90F68600F63765 /* JSONManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONManager.swift; sourceTree = "<group>"; };
+		4D0ACAF92B92DEE600F63765 /* ListViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,12 +64,12 @@
 		4D0ACADA2B90E78F00F63765 /* DispatchTrack */ = {
 			isa = PBXGroup;
 			children = (
+				4D0ACAF82B92DEC600F63765 /* Task */,
 				4D0ACAF52B90F66A00F63765 /* Manager */,
 				4D0ACAF22B90F40400F63765 /* Model */,
 				4D0ACAEF2B90E9EA00F63765 /* Resources */,
 				4D0ACADB2B90E78F00F63765 /* DispatchTrackApp.swift */,
 				4D0ACADD2B90E78F00F63765 /* Persistence.swift */,
-				4D0ACAE22B90E78F00F63765 /* ContentView.swift */,
 				4D0ACAE42B90E79000F63765 /* Assets.xcassets */,
 				4D0ACAE62B90E79000F63765 /* DispatchTrack.entitlements */,
 				4D0ACADF2B90E78F00F63765 /* DispatchTrack.xcdatamodeld */,
@@ -106,6 +108,15 @@
 				4D0ACAF62B90F68600F63765 /* JSONManager.swift */,
 			);
 			path = Manager;
+			sourceTree = "<group>";
+		};
+		4D0ACAF82B92DEC600F63765 /* Task */ = {
+			isa = PBXGroup;
+			children = (
+				4D0ACAE22B90E78F00F63765 /* ContentView.swift */,
+				4D0ACAF92B92DEE600F63765 /* ListViewCell.swift */,
+			);
+			path = Task;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,6 +196,7 @@
 				4D0ACADE2B90E78F00F63765 /* Persistence.swift in Sources */,
 				4D0ACAE32B90E78F00F63765 /* ContentView.swift in Sources */,
 				4D0ACAE12B90E78F00F63765 /* DispatchTrack.xcdatamodeld in Sources */,
+				4D0ACAFA2B92DEE600F63765 /* ListViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
